@@ -14,10 +14,10 @@ func _ready():
 	
 	# 2 added to each x
 	var polygon_b = PoolVector2Array([
-		Vector2(3, 1) * piece_scale,
-		Vector2(3, -1) * piece_scale,
-		Vector2(1, -1) * piece_scale,
-		Vector2(1, 1) * piece_scale
+		Vector2(3.00002, 1) * piece_scale,
+		Vector2(3.00002, -1) * piece_scale,
+		Vector2(1.00002, -1) * piece_scale,
+		Vector2(1.00002, 1) * piece_scale
 	])
 	
 	var combined_polygon = Geometry.merge_polygons_2d(polygon_a, polygon_b)
