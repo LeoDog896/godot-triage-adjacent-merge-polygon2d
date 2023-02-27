@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends Polygon2D
 
 onready var collision_polygon := $CollisionPolygon2D
 export(int) var piece_scale = 30
@@ -22,4 +22,4 @@ func _ready():
 	
 	var combined_polygon = Geometry.merge_polygons_2d(polygon_a, polygon_b)
 	
-	collision_polygon.polygon = combined_polygon[0]
+	polygon = combined_polygon[0]
